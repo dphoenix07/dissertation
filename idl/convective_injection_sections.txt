@@ -1,0 +1,120 @@
+convective injection sections - may 2011
+
+20 May 0000 UTC
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,465,350,465,make_date(2011,5,20,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,470,350,470,make_date(2011,5,20,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,475,350,475,make_date(2011,5,20,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,415,350,415,make_date(2011,5,20,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,415,350,415,make_date(2011,5,20,1),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,420,350,420,make_date(2011,5,20,1),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',150,440,350,440,make_date(2011,5,20,1),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+
+
+25 May 0000-0300 UTC
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,405,450,460,make_date(2011,5,25,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,410,450,455,make_date(2011,5,25,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,415,450,451,make_date(2011,5,25,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,420,450,451,make_date(2011,5,25,2),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,422,450,453,make_date(2011,5,25,1),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,425,450,455,make_date(2011,5,25,1),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',340,405,520,510,make_date(2011,5,25,3),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',340,410,520,495,make_date(2011,5,25,4),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',370,435,560,500,make_date(2011,5,25,5),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[4,17]
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',390,445,590,485,make_date(2011,5,25,6),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',420,445,620,490,make_date(2011,5,25,7),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',520,465,670,510,make_date(2011,5,25,8),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',520,465,700,515,make_date(2011,5,25,9),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',520,465,700,505,make_date(2011,5,25,9),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',580,475,780,495,make_date(2011,5,25,10),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',580,485,810,510,make_date(2011,5,25,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+23 May 2200 UTC-
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',580,485,810,510,make_date(2011,5,25,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',180,250,535,450,make_date(2011,5,23,23),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1 
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',190,250,545,450,make_date(2011,5,23,23),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',200,250,555,450,make_date(2011,5,23,23),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',300,300,555,450,make_date(2011,5,23,23),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',300,300,555,450,make_date(2011,5,24,00),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,250,555,450,make_date(2011,5,24,00),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,250,555,450,make_date(2011,5,24,01),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,250,555,450,make_date(2011,5,24,02),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,250,575,450,make_date(2011,5,24,04),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,275,575,440,make_date(2011,5,24,04),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,04),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,05),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,06),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,07),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,08),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,09),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',350,395,750,425,make_date(2011,5,24,10),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,300,425,235,make_date(2011,5,24,04),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,300,425,235,make_date(2011,5,24,05),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,300,425,245,make_date(2011,5,24,06),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',250,300,425,245,make_date(2011,5,24,10),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',275,300,420,245,make_date(2011,5,24,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',315,300,460,225,make_date(2011,5,24,16),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',315,300,460,225,make_date(2011,5,24,18),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+
+23 May 0000-0800 UTC
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',375,265,480,485,make_date(2011,5,23,00),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',375,265,500,485,make_date(2011,5,23,01),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,265,550,485,make_date(2011,5,23,02),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,320,550,430,make_date(2011,5,23,03),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,330,550,430,make_date(2011,5,23,04),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,310,550,410,make_date(2011,5,23,04),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,310,550,410,make_date(2011,5,23,05),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,310,550,410,make_date(2011,5,23,06),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',325,340,680,440,make_date(2011,5,23,07),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+
+23 May 1500-1800 UTC
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',200,120,540,120,make_date(2011,5,23,16),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+21 May 2200 UTC - 22 May 0300 UTC
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',10,420,540,420,make_date(2011,5,21,21),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+
+20 May 1900 UTC - 21 May 0300 UTC
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',100,235,325,155,make_date(2011,5,20,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,235,325,210,make_date(2011,5,20,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,235,325,210,make_date(2011,5,20,16),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,265,325,240,make_date(2011,5,20,16),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,265,325,240,make_date(2011,5,20,18),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,275,325,250,make_date(2011,5,20,18),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,285,325,260,make_date(2011,5,20,18),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',200,375,425,295,make_date(2011,5,20,19),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,325,405,250,make_date(2011,5,20,20),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,375,405,300,make_date(2011,5,20,22),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',155,375,405,300,make_date(2011,5,20,22),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,295,405,400,make_date(2011,5,20,22),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,295,405,400,make_date(2011,5,21,00),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,295,405,400,make_date(2011,5,21,02),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,345,405,450,make_date(2011,5,21,02),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,415,405,520,make_date(2011,5,21,02),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',245,595,455,220,make_date(2011,5,21,02),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,05),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,06),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,07),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,08),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,09),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,10),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,11),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',255,465,455,570,make_date(2011,5,21,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+locations of high h2o w/o strong convection
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',510,380,870,380,make_date(2011,5,19,15),map_type=2,section_type=2,chemical='H2O',zrange=[0,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',510,440,870,440,make_date(2011,5,20,9),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',10,420,540,420,make_date(2011,5,21,8),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',10,330,540,330,make_date(2011,5,21,12),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+plot_wrf_section_dbp,'20110518','seasonal_final/bigger_domain',10,420,540,420,make_date(2011,5,23,16),map_type=2,section_type=2,chemical='H2O',zrange=[4,18],dom=1
+
+
+
+
+convective injection sections - august 2013
+
+Aug 9 2100 UTC - Aug 11 0200 UTC
+plot_wrf_section_dbp,'20130805','nest_final',400,700,900,700,make_date(2013,8,10,16),map_type=2,section_type=2,dom=1,chemical='H2O'

@@ -1,0 +1,701 @@
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2018.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2017.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_44201_1980.zip
+
+unzip hourly_44201_2016.zip
+unzip hourly_44201_2015.zip
+unzip hourly_44201_2014.zip
+unzip hourly_44201_2013.zip
+unzip hourly_44201_2012.zip
+unzip hourly_44201_2011.zip
+unzip hourly_44201_2010.zip
+unzip hourly_44201_2009.zip
+unzip hourly_44201_2008.zip
+unzip hourly_44201_2007.zip
+unzip hourly_44201_2006.zip
+unzip hourly_44201_2005.zip
+unzip hourly_44201_2004.zip
+unzip hourly_44201_2003.zip
+unzip hourly_44201_2002.zip
+unzip hourly_44201_2001.zip
+unzip hourly_44201_2000.zip
+unzip hourly_44201_1999.zip
+unzip hourly_44201_1998.zip
+unzip hourly_44201_1997.zip
+unzip hourly_44201_1996.zip
+unzip hourly_44201_1995.zip
+unzip hourly_44201_1994.zip
+unzip hourly_44201_1993.zip
+unzip hourly_44201_1992.zip
+unzip hourly_44201_1991.zip
+unzip hourly_44201_1990.zip
+unzip hourly_44201_1989.zip
+unzip hourly_44201_1988.zip
+unzip hourly_44201_1987.zip
+unzip hourly_44201_1986.zip
+unzip hourly_44201_1985.zip
+unzip hourly_44201_1984.zip
+unzip hourly_44201_1983.zip
+unzip hourly_44201_1982.zip
+unzip hourly_44201_1981.zip
+unzip hourly_44201_1980.zip
+
+grep "Dallas" hourly_44201_2016.csv > dallas_2016.csv
+grep "Dallas" hourly_44201_2015.csv > dallas_2015.csv
+grep "Dallas" hourly_44201_2014.csv > dallas_2014.csv
+grep "Dallas" hourly_44201_2013.csv > dallas_2013.csv
+grep "Dallas" hourly_44201_2012.csv > dallas_2012.csv
+grep "Dallas" hourly_44201_2011.csv > dallas_2011.csv
+grep "Dallas" hourly_44201_2010.csv > dallas_2010.csv
+grep "Dallas" hourly_44201_2009.csv > dallas_2009.csv
+grep "Dallas" hourly_44201_2008.csv > dallas_2008.csv
+grep "Dallas" hourly_44201_2007.csv > dallas_2007.csv
+grep "Dallas" hourly_44201_2006.csv > dallas_2006.csv
+grep "Dallas" hourly_44201_2005.csv > dallas_2005.csv
+grep "Dallas" hourly_44201_2004.csv > dallas_2004.csv
+grep "Dallas" hourly_44201_2003.csv > dallas_2003.csv
+grep "Dallas" hourly_44201_2002.csv > dallas_2002.csv
+grep "Dallas" hourly_44201_2001.csv > dallas_2001.csv
+grep "Dallas" hourly_44201_2000.csv > dallas_2000.csv
+grep "Dallas" hourly_44201_1999.csv > dallas_1999.csv
+grep "Dallas" hourly_44201_1998.csv > dallas_1998.csv
+grep "Dallas" hourly_44201_1997.csv > dallas_1997.csv
+grep "Dallas" hourly_44201_1996.csv > dallas_1996.csv
+grep "Dallas" hourly_44201_1995.csv > dallas_1995.csv
+grep "Dallas" hourly_44201_1994.csv > dallas_1994.csv
+grep "Dallas" hourly_44201_1993.csv > dallas_1993.csv
+grep "Dallas" hourly_44201_1992.csv > dallas_1992.csv
+grep "Dallas" hourly_44201_1991.csv > dallas_1991.csv
+grep "Dallas" hourly_44201_1990.csv > dallas_1990.csv
+grep "Dallas" hourly_44201_1989.csv > dallas_1989.csv
+grep "Dallas" hourly_44201_1988.csv > dallas_1988.csv
+grep "Dallas" hourly_44201_1987.csv > dallas_1987.csv
+grep "Dallas" hourly_44201_1986.csv > dallas_1986.csv
+grep "Dallas" hourly_44201_1985.csv > dallas_1985.csv
+grep "Dallas" hourly_44201_1984.csv > dallas_1984.csv
+grep "Dallas" hourly_44201_1983.csv > dallas_1983.csv
+grep "Dallas" hourly_44201_1982.csv > dallas_1982.csv
+grep "Dallas" hourly_44201_1981.csv > dallas_1981.csv
+grep "Dallas" hourly_44201_1980.csv > dallas_1980.csv
+
+grep "Tarrant" hourly_44201_2017.csv > tarrant_2017.csv
+grep "Tarrant" hourly_44201_2016.csv > tarrant_2016.csv
+grep "Tarrant" hourly_44201_2015.csv > tarrant_2015.csv
+grep "Tarrant" hourly_44201_2014.csv > tarrant_2014.csv
+grep "Tarrant" hourly_44201_2013.csv > tarrant_2013.csv
+grep "Tarrant" hourly_44201_2012.csv > tarrant_2012.csv
+grep "Tarrant" hourly_44201_2011.csv > tarrant_2011.csv
+grep "Tarrant" hourly_44201_2010.csv > tarrant_2010.csv
+grep "Tarrant" hourly_44201_2009.csv > tarrant_2009.csv
+grep "Tarrant" hourly_44201_2008.csv > tarrant_2008.csv
+grep "Tarrant" hourly_44201_2007.csv > tarrant_2007.csv
+grep "Tarrant" hourly_44201_2006.csv > tarrant_2006.csv
+grep "Tarrant" hourly_44201_2005.csv > tarrant_2005.csv
+grep "Tarrant" hourly_44201_2004.csv > tarrant_2004.csv
+grep "Tarrant" hourly_44201_2003.csv > tarrant_2003.csv
+grep "Tarrant" hourly_44201_2002.csv > tarrant_2002.csv
+grep "Tarrant" hourly_44201_2001.csv > tarrant_2001.csv
+grep "Tarrant" hourly_44201_2000.csv > tarrant_2000.csv
+grep "Tarrant" hourly_44201_1999.csv > tarrant_1999.csv
+grep "Tarrant" hourly_44201_1998.csv > tarrant_1998.csv
+grep "Tarrant" hourly_44201_1997.csv > tarrant_1997.csv
+grep "Tarrant" hourly_44201_1996.csv > tarrant_1996.csv
+grep "Tarrant" hourly_44201_1995.csv > tarrant_1995.csv
+grep "Tarrant" hourly_44201_1994.csv > tarrant_1994.csv
+grep "Tarrant" hourly_44201_1993.csv > tarrant_1993.csv
+grep "Tarrant" hourly_44201_1992.csv > tarrant_1992.csv
+grep "Tarrant" hourly_44201_1991.csv > tarrant_1991.csv
+grep "Tarrant" hourly_44201_1990.csv > tarrant_1990.csv
+grep "Tarrant" Hourly_44201_1989.csv > tarrant_1989.csv
+grep "Tarrant" Hourly_44201_1988.csv > tarrant_1988.csv
+grep "Tarrant" hourly_44201_1987.csv > tarrant_1987.csv
+grep "Tarrant" hourly_44201_1986.csv > tarrant_1986.csv
+grep "Tarrant" hourly_44201_1985.csv > tarrant_1985.csv
+grep "Tarrant" hourly_44201_1984.csv > tarrant_1984.csv
+grep "Tarrant" Hourly_44201_1983.csv > tarrant_1983.csv
+grep "Tarrant" Hourly_44201_1982.csv > tarrant_1982.csv
+grep "Tarrant" hourly_44201_1981.csv > tarrant_1981.csv
+grep "Tarrant" hourly_44201_1980.csv > tarrant_1980.csv
+
+;NO2 data
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_42602_1980.zip
+
+unzip hourly_42602_2016.zip
+unzip hourly_42602_2015.zip
+unzip hourly_42602_2014.zip
+unzip hourly_42602_2013.zip
+unzip hourly_42602_2012.zip
+unzip hourly_42602_2011.zip
+unzip hourly_42602_2010.zip
+unzip hourly_42602_2009.zip
+unzip hourly_42602_2008.zip
+unzip hourly_42602_2007.zip
+unzip hourly_42602_2006.zip
+unzip hourly_42602_2005.zip
+unzip hourly_42602_2004.zip
+unzip hourly_42602_2003.zip
+unzip hourly_42602_2002.zip
+unzip hourly_42602_2001.zip
+unzip hourly_42602_2000.zip
+unzip hourly_42602_1999.zip
+unzip hourly_42602_1998.zip
+unzip hourly_42602_1997.zip
+unzip hourly_42602_1996.zip
+unzip hourly_42602_1995.zip
+unzip hourly_42602_1994.zip
+unzip hourly_42602_1993.zip
+unzip hourly_42602_1992.zip
+unzip hourly_42602_1991.zip
+unzip hourly_42602_1990.zip
+unzip hourly_42602_1989.zip
+unzip hourly_42602_1988.zip
+unzip hourly_42602_1987.zip
+unzip hourly_42602_1986.zip
+unzip hourly_42602_1985.zip
+unzip hourly_42602_1984.zip
+unzip hourly_42602_1983.zip
+unzip hourly_42602_1982.zip
+unzip hourly_42602_1981.zip
+unzip hourly_42602_1980.zip
+
+;precursors
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_VOCS_1980.zip
+
+unzip hourly_VOCS_2016.zip
+unzip hourly_VOCS_2015.zip
+unzip hourly_VOCS_2014.zip
+unzip hourly_VOCS_2013.zip
+unzip hourly_VOCS_2012.zip
+unzip hourly_VOCS_2011.zip
+unzip hourly_VOCS_2010.zip
+unzip hourly_VOCS_2009.zip
+unzip hourly_VOCS_2008.zip
+unzip hourly_VOCS_2007.zip
+unzip hourly_VOCS_2006.zip
+unzip hourly_VOCS_2005.zip
+unzip hourly_VOCS_2004.zip
+unzip hourly_VOCS_2003.zip
+unzip hourly_VOCS_2002.zip
+unzip hourly_VOCS_2001.zip
+unzip hourly_VOCS_2000.zip
+unzip hourly_VOCS_1999.zip
+unzip hourly_VOCS_1998.zip
+unzip hourly_VOCS_1997.zip
+unzip hourly_VOCS_1996.zip
+unzip hourly_VOCS_1995.zip
+unzip hourly_VOCS_1994.zip
+unzip hourly_VOCS_1993.zip
+unzip hourly_VOCS_1992.zip
+unzip hourly_VOCS_1991.zip
+unzip hourly_VOCS_1990.zip
+unzip hourly_VOCS_1989.zip
+unzip hourly_VOCS_1988.zip
+unzip hourly_VOCS_1987.zip
+unzip hourly_VOCS_1986.zip
+unzip hourly_VOCS_1985.zip
+unzip hourly_VOCS_1984.zip
+unzip hourly_VOCS_1983.zip
+unzip hourly_VOCS_1982.zip
+unzip hourly_VOCS_1981.zip
+unzip hourly_VOCS_1980.zip
+
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2017.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_NONOxNOy_1980.zip
+
+unzip hourly_NONOxNOy_2017.zip
+unzip hourly_NONOxNOy_2016.zip
+unzip hourly_NONOxNOy_2015.zip
+unzip hourly_NONOxNOy_2014.zip
+unzip hourly_NONOxNOy_2013.zip
+unzip hourly_NONOxNOy_2012.zip
+unzip hourly_NONOxNOy_2011.zip
+unzip hourly_NONOxNOy_2010.zip
+unzip hourly_NONOxNOy_2009.zip
+unzip hourly_NONOxNOy_2008.zip
+unzip hourly_NONOxNOy_2007.zip
+unzip hourly_NONOxNOy_2006.zip
+unzip hourly_NONOxNOy_2005.zip
+unzip hourly_NONOxNOy_2004.zip
+unzip hourly_NONOxNOy_2003.zip
+unzip hourly_NONOxNOy_2002.zip
+unzip hourly_NONOxNOy_2001.zip
+unzip hourly_NONOxNOy_2000.zip
+unzip hourly_NONOxNOy_1999.zip
+unzip hourly_NONOxNOy_1998.zip
+unzip hourly_NONOxNOy_1997.zip
+unzip hourly_NONOxNOy_1996.zip
+unzip hourly_NONOxNOy_1995.zip
+unzip hourly_NONOxNOy_1994.zip
+unzip hourly_NONOxNOy_1993.zip
+unzip hourly_NONOxNOy_1992.zip
+unzip hourly_NONOxNOy_1991.zip
+unzip hourly_NONOxNOy_1990.zip
+unzip hourly_NONOxNOy_1989.zip
+unzip hourly_NONOxNOy_1988.zip
+unzip hourly_NONOxNOy_1987.zip
+unzip hourly_NONOxNOy_1986.zip
+unzip hourly_NONOxNOy_1985.zip
+unzip hourly_NONOxNOy_1984.zip
+unzip hourly_NONOxNOy_1983.zip
+unzip hourly_NONOxNOy_1982.zip
+unzip hourly_NONOxNOy_1981.zip
+unzip hourly_NONOxNOy_1980.zip
+
+;met data
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2017.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_WIND_1980.zip
+
+unzip hourly_WIND_2017.zip
+unzip hourly_WIND_2016.zip
+unzip hourly_WIND_2015.zip
+unzip hourly_WIND_2014.zip
+unzip hourly_WIND_2013.zip
+unzip hourly_WIND_2012.zip
+unzip hourly_WIND_2011.zip
+unzip hourly_WIND_2010.zip
+unzip hourly_WIND_2009.zip
+unzip hourly_WIND_2008.zip
+unzip hourly_WIND_2007.zip
+unzip hourly_WIND_2006.zip
+unzip hourly_WIND_2005.zip
+unzip hourly_WIND_2004.zip
+unzip hourly_WIND_2003.zip
+unzip hourly_WIND_2002.zip
+unzip hourly_WIND_2001.zip
+unzip hourly_WIND_2000.zip
+unzip hourly_WIND_1999.zip
+unzip hourly_WIND_1998.zip
+unzip hourly_WIND_1997.zip
+unzip hourly_WIND_1996.zip
+unzip hourly_WIND_1995.zip
+unzip hourly_WIND_1994.zip
+unzip hourly_WIND_1993.zip
+unzip hourly_WIND_1992.zip
+unzip hourly_WIND_1991.zip
+unzip hourly_WIND_1990.zip
+unzip hourly_WIND_1989.zip
+unzip hourly_WIND_1988.zip
+unzip hourly_WIND_1987.zip
+unzip hourly_WIND_1986.zip
+unzip hourly_WIND_1985.zip
+unzip hourly_WIND_1984.zip
+unzip hourly_WIND_1983.zip
+unzip hourly_WIND_1982.zip
+unzip hourly_WIND_1981.zip
+unzip hourly_WIND_1980.zip
+
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2017.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_TEMP_1980.zip
+
+unzip hourly_TEMP_2017.zip
+unzip hourly_TEMP_2016.zip
+unzip hourly_TEMP_2015.zip
+unzip hourly_TEMP_2014.zip
+unzip hourly_TEMP_2013.zip
+unzip hourly_TEMP_2012.zip
+unzip hourly_TEMP_2011.zip
+unzip hourly_TEMP_2010.zip
+unzip hourly_TEMP_2009.zip
+unzip hourly_TEMP_2008.zip
+unzip hourly_TEMP_2007.zip
+unzip hourly_TEMP_2006.zip
+unzip hourly_TEMP_2005.zip
+unzip hourly_TEMP_2004.zip
+unzip hourly_TEMP_2003.zip
+unzip hourly_TEMP_2002.zip
+unzip hourly_TEMP_2001.zip
+unzip hourly_TEMP_2000.zip
+unzip hourly_TEMP_1999.zip
+unzip hourly_TEMP_1998.zip
+unzip hourly_TEMP_1997.zip
+unzip hourly_TEMP_1996.zip
+unzip hourly_TEMP_1995.zip
+unzip hourly_TEMP_1994.zip
+unzip hourly_TEMP_1993.zip
+unzip hourly_TEMP_1992.zip
+unzip hourly_TEMP_1991.zip
+unzip hourly_TEMP_1990.zip
+unzip hourly_TEMP_1989.zip
+unzip hourly_TEMP_1988.zip
+unzip hourly_TEMP_1987.zip
+unzip hourly_TEMP_1986.zip
+unzip hourly_TEMP_1985.zip
+unzip hourly_TEMP_1984.zip
+unzip hourly_TEMP_1983.zip
+unzip hourly_TEMP_1982.zip
+unzip hourly_TEMP_1981.zip
+unzip hourly_TEMP_1980.zip
+
+
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2017.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_PRESS_1980.zip
+
+unzip hourly_PRESS_2017.zip
+unzip hourly_PRESS_2016.zip
+unzip hourly_PRESS_2015.zip
+unzip hourly_PRESS_2014.zip
+unzip hourly_PRESS_2013.zip
+unzip hourly_PRESS_2012.zip
+unzip hourly_PRESS_2011.zip
+unzip hourly_PRESS_2010.zip
+unzip hourly_PRESS_2009.zip
+unzip hourly_PRESS_2008.zip
+unzip hourly_PRESS_2007.zip
+unzip hourly_PRESS_2006.zip
+unzip hourly_PRESS_2005.zip
+unzip hourly_PRESS_2004.zip
+unzip hourly_PRESS_2003.zip
+unzip hourly_PRESS_2002.zip
+unzip hourly_PRESS_2001.zip
+unzip hourly_PRESS_2000.zip
+unzip hourly_PRESS_1999.zip
+unzip hourly_PRESS_1998.zip
+unzip hourly_PRESS_1997.zip
+unzip hourly_PRESS_1996.zip
+unzip hourly_PRESS_1995.zip
+unzip hourly_PRESS_1994.zip
+unzip hourly_PRESS_1993.zip
+unzip hourly_PRESS_1992.zip
+unzip hourly_PRESS_1991.zip
+unzip hourly_PRESS_1990.zip
+unzip hourly_PRESS_1989.zip
+unzip hourly_PRESS_1988.zip
+unzip hourly_PRESS_1987.zip
+unzip hourly_PRESS_1986.zip
+unzip hourly_PRESS_1985.zip
+unzip hourly_PRESS_1984.zip
+unzip hourly_PRESS_1983.zip
+unzip hourly_PRESS_1982.zip
+unzip hourly_PRESS_1981.zip
+unzip hourly_PRESS_1980.zip
+
+
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2017.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2016.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2015.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2014.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2013.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2012.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2011.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2010.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2009.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2008.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2007.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2006.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2005.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2004.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2003.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2002.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2001.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_2000.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1999.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1998.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1997.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1996.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1995.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1994.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1993.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1992.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1991.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1990.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1989.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1988.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1987.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1986.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1985.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1984.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1983.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1982.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1981.zip
+wget https://aqs.epa.gov/aqsweb/airdata/hourly_RH_DP_1980.zip
+
+unzip hourly_RH_DP_2017.zip
+unzip hourly_RH_DP_2016.zip
+unzip hourly_RH_DP_2015.zip
+unzip hourly_RH_DP_2014.zip
+unzip hourly_RH_DP_2013.zip
+unzip hourly_RH_DP_2012.zip
+unzip hourly_RH_DP_2011.zip
+unzip hourly_RH_DP_2010.zip
+unzip hourly_RH_DP_2009.zip
+unzip hourly_RH_DP_2008.zip
+unzip hourly_RH_DP_2007.zip
+unzip hourly_RH_DP_2006.zip
+unzip hourly_RH_DP_2005.zip
+unzip hourly_RH_DP_2004.zip
+unzip hourly_RH_DP_2003.zip
+unzip hourly_RH_DP_2002.zip
+unzip hourly_RH_DP_2001.zip
+unzip hourly_RH_DP_2000.zip
+unzip hourly_RH_DP_1999.zip
+unzip hourly_RH_DP_1998.zip
+unzip hourly_RH_DP_1997.zip
+unzip hourly_RH_DP_1996.zip
+unzip hourly_RH_DP_1995.zip
+unzip hourly_RH_DP_1994.zip
+unzip hourly_RH_DP_1993.zip
+unzip hourly_RH_DP_1992.zip
+unzip hourly_RH_DP_1991.zip
+unzip hourly_RH_DP_1990.zip
+unzip hourly_RH_DP_1989.zip
+unzip hourly_RH_DP_1988.zip
+unzip hourly_RH_DP_1987.zip
+unzip hourly_RH_DP_1986.zip
+unzip hourly_RH_DP_1985.zip
+unzip hourly_RH_DP_1984.zip
+unzip hourly_RH_DP_1983.zip
+unzip hourly_RH_DP_1982.zip
+unzip hourly_RH_DP_1981.zip
+unzip hourly_RH_DP_1980.zip

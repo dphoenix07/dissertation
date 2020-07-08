@@ -1,0 +1,77 @@
+Current analysis scripts
+
+Wrapping Project:
+h2o_mass_layer_v3
+ozone_mass_layer_v3
+
+Seasonal Project:
+timeseries:
+write_h2o_timeseries_file
+write_o3_timeseries_file
+
+environment/storm char. analysis:
+overshoot_tracking_v2
+plot_overshoot_relationships (companion to overshoot_tracking.pro)
+
+bulk analysis:
+write_tracer_tracer_file
+plot_tracer_tracer_file
+overshoot_ztrop_bin_copy
+plot_binned_profiles
+plot_wrf_section_dbp2
+
+anvil wrapping algorithm: 
+plot_tp_trtracer
+ozone_anomaly_box
+utls_tracer_box -> plot_ozone_anomaly_v2 (plots the file written from utls_tracer_box)
+
+
+
+Current final figures:
+
+H2O Timeseries
+august_h2o_timeseries_troprel2.pdf
+august_h2o_timeseries_theta.pdf
+may_h2o_troprel2.pdf
+may_h2o_timeseries_theta.pdf
+
+O3 Timeseries
+may_o3_timeseries_troprel2_14kmfilter.pdf
+
+
+
+August H2O sections
+plot_wrf_section_dbp2,'20130805','nest_final',750,500,810,200,make_date(2013,8,6,1),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[5,19]
+plot_wrf_section_dbp2,'20130805','nest_final',650,700,950,550,make_date(2013,8,7,10),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[5,23]
+plot_wrf_section_dbp2,'20130805','nest_final',550,400,950,400,make_date(2013,8,14,22),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[8,23]
+plot_wrf_section_dbp2,'20130805','nest_final',550,100,950,75,make_date(2013,8,14,5),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[8,23] 
+plot_wrf_section_dbp2,'20130805','nest_final',450,450,950,400,make_date(2013,8,14,5),map_type=0,section_type=2,chemical='H2O',dom=1,zrange=[8,23]
+plot_wrf_section_dbp2,'20130805','nest_final',450,425,950,375,make_date(2013,8,14,9),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[8,23]
+plot_wrf_section_dbp2,'20130805','nest_final',10,200,350,200,make_date(2013,8,14,6),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[8,23]
+plot_wrf_section_dbp2,'20130805','nest_final',700,550,1000,700,make_date(2013,8,9,15),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[8,23]
+plot_wrf_section_dbp2,'20130805','nest_final',700,600,1000,700,make_date(2013,8,11,5),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[8,23]
+plot_wrf_section_dbp2,'20130805','nest_final',600,550,1000,700,make_date(2013,8,11,1),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp2,'20130805','nest_final',600,600,1000,700,make_date(2013,8,11,1),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+plot_wrf_section_dbp2,'20130805','nest_final',400,400,1000,700,make_date(2013,8,10,15),map_type=2,section_type=2,chemical='H2O',dom=1,zrange=[5,20]
+
+
+
+May O3 sections
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',300,200,400,475,make_date(2011,5,24,0),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[0,16] 
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',400,600,400,475,make_date(2011,5,24,09),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[0,16]
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',400,200,600,75,make_date(2011,5,26,21),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[0,16] 
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',450,300,650,175,make_date(2011,5,26,21),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[0,16]
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',50,300,250,175,make_date(2011,5,20,10),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[0,16] 
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',200,175,400,450,make_date(2011,5,23,22),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[0,16]
+
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',50,300,250,175,make_date(2011,5,20,10),map_type=0,section_type=2 ,chemical='Passive_TR_tracer',dom=1,zrange=[0,16],/PNG 
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',100,50,300,285,make_date(2011,5,23,12),map_type=0,section_type=2 ,chemical='Passive_TR_tracer',dom=1,zrange=[0,20],/PNG
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',200,175,400,450,make_date(2011,5,23,22),map_type=0,section_type=2,chemical='Passive_TR_tracer',dom=1,zrange=[0,16],/PNG
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',300,200,400,475,make_date(2011,5,24,0),map_type=0,section_type=2 ,chemical='Passive_TR_tracer',dom=1,zrange=[0,16],/PNG 
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',450,300,650,175,make_date(2011,5,26,21),map_type=0,section_type=2,chemical='Passive_TR_tracer',dom=1,zrange=[0,16],/PNG
+
+
+Aug O3 sections
+plot_wrf_section_dbp2,'20130805','nest_final',650,700,950,525,make_date(2013,8,9,6),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[5,23]
+plot_wrf_section_dbp2,'20130805','nest_final',350,600,800,500,make_date(2013,8,12,17),map_type=0,section_type=2,chemical='O3',dom=1,zrange=[5,23]
+

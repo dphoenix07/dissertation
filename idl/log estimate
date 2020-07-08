@@ -1,0 +1,19 @@
+; IDL Version 8.4.1 (linux x86_64 m64)
+; Journal File for dphoenix@aardvark.som.nor.ou.edu
+; Working directory: /home/dphoenix/idl
+; Date: Mon Dec 28 22:34:01 2015
+ 
+x = 1 + 0.1*findgen(100)
+x = 1 + 0.1*findgen(91)
+y = alog(x)
+x0 = randomu(x)
+z = VALUE_LOCATE(y, x0)
+print, 'actual log of x0 is: ' + alog(x0)
+; % Type conversion error: Unable to convert given STRING to Float.
+;     -1.46360
+print, 'actual log of x0 is: ' + str(alog(x0))
+;actual log of x0 is: -1.5
+print, 'estimated log of x0 using VALUE_LOCATE is: 
+;estimated log of x0 using VALUE_LOCATE is: 
+print, 'estimated log of x0 using VALUE_LOCATE is: ' + STR(y[z])
+;estimated log of x0 using VALUE_LOCATE is: 0.18

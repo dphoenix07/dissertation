@@ -1,0 +1,177 @@
+Storms
+Case: 20110518
+
+1. Date/Time: 20110519T0200Z - 20110519T0700Z
+	section: [70, 48, 300,  48]
+	region:  [70, 10, 300, 100]
+	cloud top: 16 km
+	tropopause: varies (12-15km)
+	notables: H2O max ~75 ppmv at 14 km 0500Z; some ozone wrapping
+	misc: may be difficult to assess wrapping, in tropopause break region
+
+2. date/time: 20110519T0700Z-20110519T1100Z
+	section: [190, 210, 450, 210]
+	 plot_wrf_section_crh,'20110518','seasonal_final/corrected',190,210,480,210,make_date(2011,5,19,10),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[7,17]
+	region:  [190, 150, 450, 300]
+	cloud top: 15 km
+	tropopause: ~13km
+	notables: H2O max ~ 125 ppmv at 13-14 km; ozone wrapping
+	misc:
+	
+3. date/time: 20110519T1100Z-20110519T1500Z
+	section: [190, 217, 450, 217]
+	region:  [190, 150, 450, 300]
+	cloud top: 15 km
+	tropopause: ~13km
+	notables: H2O max ~75 ppmv at 13 km, perturbation extends up to 16 km
+	misc:
+	
+4. date/time: 20110519T1100Z-20110519T1500Z
+	section: [10, 48, 200,  48]
+	region:  [ 1,  1, 200, 100]
+	cloud top: ~16 km
+	tropopause: varies (13-16km)
+	notables: H2O max ~ 50 ppmv at 15 km (12Z); not much O3/CO transport
+	misc:
+	
+5. date/time: 20110519T1800Z-20110519T1900Z
+	section: [220, 230, 500, 230]
+	region:  [220, 170, 500, 280]
+	cloud top: ~16 km
+	tropopause: ~13.5 km
+	notables: some H2O injection, not much wrapping
+	misc:doesn't materialize to much
+
+6. date/time: 20110519T0400Z-20110519T0700Z
+	section: PLOT_WRF_SECTION_CRH,'20110518','seasonal_final/corrected',-98.0,36.34,-88.0,36.35,MAKE_DATE(2011,5,19,5),domain=1,map_type=1,section_type=2,chemical='UTLS_tracer',/COORDINATES
+	region :
+	cloud top: ~16 km
+	tropopause: 12.5 km
+	notables: through section, good wrapping around southern rear anvil (~232 ppbv max down 960 m)
+				wrapping looks to come through modification/break in tropopause from storm (quasi-lateral)
+				
+7. date/time: 20110523T2300Z (ozone wrapping 20110523T1900Z-)
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',260,360,340,200,make_date(2011,5,23,21),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',260,360,340,200,make_date(2011,5,23,22),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',260,480,430,100,make_date(2011,5,24,4),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+	section: PLOT_WRF_SECTION_CRH,'20110518','seasonal_final/corrected',70, 230, 350, 230, MAKE_DATE(2011,5,23,23),DOMAIN=1,section_type=2,chemical='UTLS_tracer'
+	region :
+	cloud top: 17+ km
+	tropopause: ~13 km
+	notables: good H2O injection, lots of anvil wrapping; storm perturbs tropopause greatly
+	
+8. date/time: 20110519T2300Z
+	section: plot_wrf_section_crh,'20110518','seasonal_final/corrected',80,310,350,280,make_date(2011,5,19,23),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+	
+	
+Ozone Wrapping Sections:
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',220,275,400,275,make_date(2011,5,23,0),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',270,325,450,325,make_date(2011,5,22,23),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',220,180,400,180,make_date(2011,5,22,23),map_type=1,section_type=2,chemical='w',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',220,180,370,180,make_date(2011,5,22,22),map_type=1,section_type=2,chemical='w',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',90,310,280,310,make_date(2011,5,19,22),map_type=1,section_type=2,chemical='w',domain=1,zrange=[7,17]
+PLOT_WRF_SECTION_CRH,'20110518','seasonal_final/corrected',-98.0,36.34,-88.0,36.35,MAKE_DATE(2011,5,19,5),domain=1,map_type=1,section_type=2,chemical='w',/COORDINATES,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',190,210,480,210,make_date(2011,5,19,10),map_type=1,section_type=2,chemical='w',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',265,360,345,200,make_date(2011,5,23,21),map_type=1,section_type=2,chemical='w',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',265,360,345,200,make_date(2011,5,23,20),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',65,400,185,220,make_date(2011,5,24,16),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',65,420,225,220,make_date(2011,5,24,16),map_type=1,section_type=2,chemical='UTLS_tracer',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',40,420,200,220,make_date(2011,5,24,14),map_type=1,section_type=2,chemical='O3',domain=1,zrange=[6,17]
+
+
+Ozone Wrapping Sections (from tracking method):
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,50,300,50,make_date(2011,5,19,4),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',125,200,375,200,make_date(2011,5,19,5),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',75,325,375,325,make_date(2011,5,20,1),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',25,85,300,85,make_date(2011,5,20,1),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',25,85,350,85,make_date(2011,5,21,1),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',25,155,350,135,make_date(2011,5,21,1),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',25,425,525,415,make_date(2011,5,21,4),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',270,325,450,325,make_date(2011,5,22,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',220,180,400,180,make_date(2011,5,22,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,80,360,80,make_date(2011,5,22,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,80,370,80,make_date(2011,5,22,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17] 
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',220,275,400,275,make_date(2011,5,23,0),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',170,180,450,180,make_date(2011,5,23,2),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,30,190,170,make_date(2011,5,23,11),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17] 
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,80,270,80,make_date(2011,5,23,11),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17] 
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,170,230,30,make_date(2011,5,23,11),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]  
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',300,180,490,350,make_date(2011,5,23,11),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17] 
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',265,360,495,90,make_date(2011,5,23,18),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',265,360,455,10,make_date(2011,5,23,18),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',265,360,345,200,make_date(2011,5,23,21),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[8,16]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',135,360,245,150,make_date(2011,5,23,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',75,335,405,225,make_date(2011,5,24,14),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,365,405,225,make_date(2011,5,24,17),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,365,305,285,make_date(2011,5,24,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,205,325,145,make_date(2011,5,24,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,115,335,115,make_date(2011,5,24,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,125,335,145,make_date(2011,5,24,23),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',150,115,485,115,make_date(2011,5,26,1),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[7,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',270,130,485,130,make_date(2011,5,26,1),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[0,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',250,115,525,115,make_date(2011,5,26,18),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[5,17]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',250,215,525,215,make_date(2011,5,26,18),map_type=3,section_type=2,chemical='O3',domain=1,zrange=[5,17]
+
+plot_wrf_section_dbp2,'20110518','seasonal_final/bigger_domain',250,420,600,320,make_date(2011,5,23,2),map_type=2,section_type=2,chemical='O3',domain=1,zrange=[6,16]
+
+H2O injection sections:
+Highest water event
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,350,460,350,make_date(2011,5,25,01),map_type=1,section_type=1,dom=1
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,250,460,250,make_date(2011,5,25,03),map_type=1,section_type=2,chemical='H2O',dom=1
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,350,460,350,make_date(2011,5,24,21),map_type=1,section_type=2,chemical='H2O',dom=1  
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,350,460,350,make_date(2011,5,24,23),map_type=1,section_type=2,chemical='H2O',dom=1  
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',30,335,460,325,make_date(2011,5,24,18),map_type=1,section_type=2,chemical='H2O',dom=1 
+Evolution sections:
+plot_wrf_section_crh,'20110518','seasonal_final/corrected', 30,320,260,310,make_date(2011,5,24,16),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',100,325,210,315,make_date(2011,5,24,17),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',105,330,215,320,make_date(2011,5,24,18),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',115,335,225,325,make_date(2011,5,24,19),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',125,340,245,330,make_date(2011,5,24,20),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',125,340,245,330,make_date(2011,5,24,21),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',140,345,260,335,make_date(2011,5,24,21),map_type=1,section_type=2,chemical='H2O',dom=1,zrange=[8,18]
+   	
+Similar strength and coverage but less water:
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',210,360,290,200,make_date(2011,5,23,18),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',180,240,340,320,make_date(2011,5,23,18),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',180,240,340,320,make_date(2011,5,23,19),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',180,240,340,320,make_date(2011,5,23,20),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',180,240,370,350,make_date(2011,5,23,21),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+
+Another case:
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',210,240,400,350,make_date(2011,5,22,23),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',210,240,400,350,make_date(2011,5,23,00),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',210,240,430,380,make_date(2011,5,23,00),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',210,240,460,410,make_date(2011,5,23,01),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,18]
+
+Case where the tropopause is higher than 350K 
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,85,260,85,make_date(2011,5,19,21),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,85,260,85,make_date(2011,5,19,22),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,85,260,85,make_date(2011,5,19,23),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,85,260,85,make_date(2011,5,20,00),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,115,260,110,make_date(2011,5,20,06),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,20]
+plot_wrf_section_crh,'20110518','seasonal_final/corrected',50,115,260,110,make_date(2011,5,20,08),map_type=1,section_type=2,chemical='H2O',domain=1,zrange=[8,20]
+
+
+2.5 km domain sections
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,450,145,make_date(2012,5,30,22),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,450,145,make_date(2012,5,30,23),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,450,145,make_date(2012,5,31,00),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,450,145,make_date(2012,5,31,01),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,450,145,make_date(2012,5,31,02),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,600,100,make_date(2012,5,31,03),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,600,100,make_date(2012,5,31,04),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+plot_wrf_section_crh,'20120530_ncar','d02_30km',100,275,600,100,make_date(2012,5,31,05),dom=1,map_type=1,section_type=2,chemical='O3',zrange=[7,17]
+
+x0=100, y0=200, x1=300, y1=200, date=2012,5,30,22
+x0=125, y0=200, x1=350, y1=200, date=2012,5,30,23
+x0=125, y0=200, x1=400, y1=200, date=2012,5,31,00
+x0=125, y0=200, x1=450, y1=200, date=2012,5,31,01
+x0=125, y0=200, x1=450, y1=200, date=2012,5,31,02
+x0=125, y0=200, x1=500, y1=175, date=2012,5,31,03
+x0=125, y0=200, x1=550, y1=165, date=2012,5,31,04
+x0=125, y0=200, x1=600, y1=165, date=2012,5,31,05
+
+Section for trajectories
+plot_wrf_section_dbp,'20120530_ncar','d03_30km',300,550,1719,225,make_date(2012,5,31,3,0),map_type=2,chemical='O3_tracer',section_type=2,domain=1,zrange=[7,18]
+plot_wrf_section_dbp2,'20120530_ncar','d03_30km',350,550,500,450,make_date(2012,5,31,2,45),map_type=2,chemical='O3_tracer',section_type=2,domain=1,zrange=[7,15],/EPS
+plot_wrf_section_dbp2,'20120530_ncar','d03_30km',1325,175,1450,125,make_date(2012,5,31,2,45),map_type=2,chemical='O3_tracer',section_type=2,domain=1,zrange=[7,15],/EPS

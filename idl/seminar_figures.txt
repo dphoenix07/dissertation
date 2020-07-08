@@ -1,0 +1,15 @@
+figures for seminar
+
+# Need to increase colorbar font size
+h2o_timeseries_plots,'20110518','seasonal_final/corrected','20110518T1300Z','20110527T1200Z',/TROP_REL,/PNG
+
+dominant_hydrometeor,'20110518','seasonal_final/corrected','20110518T1300Z','20110527T1200Z', base = 350, /PNG
+dominant_hydrometeor,'20110518','seasonal_final/corrected','20110518T1300Z','20110527T1200Z', base = 380, /PNG
+
+nexrad_timeseries_plots,'20110518','seasonal_final/corrected','20110518T1300Z','20110527T1200Z',/TROP_REL,/PNG
+
+# Do for each 25 hour period (to fill contour range)
+time_height_convective_influence_new,'20110518','seasonal_final/corrected','20110518T1200Z','20110519T1300Z',/MID_LAT,/CLD_COVER,/PERCENT_DIFF,/PNG
+
+nexrad_overshoot_counts,'20110518','seasonal_final/corrected','20110518T1300Z','20110527T1200Z',/PNG
+overshoot_counts,'20110518','seasonal_final/corrected','20110518T1300Z','20110527T1200Z',/ECHO_TOP,/PNG

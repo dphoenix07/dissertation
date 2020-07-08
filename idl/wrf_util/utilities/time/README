@@ -1,0 +1,64 @@
+Date and time library
+=====================
+
+This IDL library is designed to store dates and times with values exact to the second.  It can carry out date and time calculations and convert dates and times to and from ISO 8601 string formats.  For a summary of the ISO 8601 standard visit
+
+	http://www.cl.cam.ac.uk/~mgk25/iso-time.html
+
+Dates and times are stored using the named structure {CDATE}, which stores the year, month, day, hour, minute and second.  Functions are available to create CDATE structures, compute time differences between CDATEs, and increment CDATEs.  Internally, calculations are done by converting dates to Julian day number and time of day in seconds.  The CDATE structure should generally not be manipulated directly.  
+
+The best way to understand is by example.
+
+;Make a CDATE structure
+IDL> date = MAKE_DATE(2005, 9, 1, 18, 15, 3)
+
+IDL> PRINT, date
+{        2005           9           1          18          15           3}
+
+;Show CDATE structure contents
+IDL> HELP, date, /STRUCTURE
+** Structure CDATE, 6 tags, length=24, data length=24:
+   YEAR            LONG              2005
+   MONTH           LONG                 9
+   DAY             LONG                 1
+   HOUR            LONG                18
+   MINUTE          LONG                15
+   SECOND          LONG                 3
+
+;Print formatted date
+IDL> PRINT, MAKE_ISO_DATE_STRING(date)
+2005-09-01 18:15:03
+
+;Add time increment to date
+IDL> PRINT, MAKE_ISO_DATE_STRING(TIME_INC(date, 86400))
+2005-09-02 18:15:03
+
+;Print compact formatted date (for file names)
+IDL> PRINT, MAKE_ISO_DATE_STRING(date, /COMPACT)
+20050901T181503
+
+;Specify output precision
+IDL> PRINT, MAKE_ISO_DATE_STRING(date, PRECISION = 'hour', /UTC)
+2005-09-01 18Z
+
+;Specify output precision
+IDL> PRINT, MAKE_ISO_DATE_STRING(date, PRECISION = 'hour', /COMPACT, /UTC)
+20050901T18Z
+
+;Date of next day
+IDL> PRINT, MAKE_ISO_DATE_STRING(NEXT_DAY(date))
+2005-09-02 00:00:00
+
+;Date of last day of month
+IDL> PRINT, MAKE_ISO_DATE_STRING(LAST_DAY(date))  
+2005-09-30 00:00:00
+
+;Date of first day of next month
+IDL> PRINT, MAKE_ISO_DATE_STRING(NEXT_MONTH(date))
+2005-10-01 00:00:00
+
+;Date of first day of next year
+IDL> PRINT, MAKE_ISO_DATE_STRING(NEXT_YEAR(date)) 
+2006-01-01 00:00:00
+
+For climate model calculations, dates and times can be computed without leap days.

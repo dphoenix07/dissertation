@@ -1,0 +1,26 @@
+ncks -d Time,0  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_12:00:00
+ncks -d Time,1  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_13:00:00
+ncks -d Time,2  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_14:00:00
+ncks -d Time,3  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_15:00:00
+ncks -d Time,4  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_16:00:00
+ncks -d Time,5  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_17:00:00
+ncks -d Time,6  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_18:00:00
+ncks -d Time,7  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_19:00:00
+ncks -d Time,8  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_20:00:00
+ncks -d Time,9  wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_21:00:00
+ncks -d Time,10 wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_22:00:00
+ncks -d Time,11 wrfchemi_12z_d01 wrfchemi_d01_2009-04-12_23:00:00
+
+ncks -d Time,0  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_00:00:00
+ncks -d Time,1  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_01:00:00
+ncks -d Time,2  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_02:00:00
+ncks -d Time,3  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_03:00:00
+ncks -d Time,4  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_04:00:00
+ncks -d Time,5  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_05:00:00
+ncks -d Time,6  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_06:00:00
+ncks -d Time,7  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_07:00:00
+ncks -d Time,8  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_08:00:00
+ncks -d Time,9  wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_09:00:00
+ncks -d Time,10 wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_10:00:00
+ncks -d Time,11 wrfchemi_00z_d01 wrfchemi_d01_2009-04-12_11:00:00
+
