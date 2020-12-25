@@ -73,9 +73,9 @@ FOR nf = 0, 1 DO BEGIN
 	sonde_lon = -105.25
 	sonde_lat = 40.0
 
-	epsfile = indir + '.eps'	
-	pdffile = indir + '.pdf'	
-	pngfile = indir + '.png'	
+	epsfile = indir + 'boulder_may2011_o3sonde.eps'	
+	pdffile = indir + 'boulder_may2011_o3sonde.pdf'	
+	pngfile = indir + 'boulder_may2011_o3sonde.png'	
 	
 	sonde_pres = READ_CSV(infile1)
 	sonde_ppo3 = READ_CSV(infile2)
@@ -110,7 +110,7 @@ FOR nf = 0, 1 DO BEGIN
 	wrf_o3_sondepath = FLTARR(N_ELEMENTS(sonde_o3))
 	sonde_loc 	     = FLTARR(N_ELEMENTS(sonde_o3))
 
-	FOR tt = 0, sonde_iztrop+1000, 50 DO BEGIN
+	FOR tt = 0, sonde_iztrop+2000, 50 DO BEGIN
 		sonde_loc[tt] = WHERE(MIN((SQRT((sonde_lon - wrf_lon_3d)^2 + (sonde_lat - wrf_lat_3d)^2 + (sonde_gph.field1[tt] - wrf_alt)^2 ))) EQ $
 						(SQRT((sonde_lon - wrf_lon_3d)^2 + (sonde_lat - wrf_lat_3d)^2 + (sonde_gph.field1[tt] - wrf_alt)^2)))
 		wrf_o3_sondepath [tt] = wrf_o3[sonde_loc[tt]]*1.0E3
@@ -124,12 +124,26 @@ FOR nf = 0, 1 DO BEGIN
 
 	nlines = SIZE(wrf_o3_sondepath,/DIMENSIONS)
 
-	IF (nf EQ 0) THEN PLOT , (wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, TITLE = location, XRANGE = [-300,200], COLOR = COLOR_24(color[0])
+	IF (nf EQ 0) THEN PLOT , (wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, TITLE = location, $
+								XRANGE = [-300,200], COLOR = COLOR_24(color[0]), XTITLE = 'WRF O3 Bias (ppb)', YTITLE = 'Relative Altitude (km)'
+								
 	IF (nf GE 1) THEN OPLOT, (wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, COLOR = COLOR_24(color[1])
+								
 
 	OPLOT, [-300,200],[wrf_ralt_trop,wrf_ralt_trop], THICK = 3, LINESTYLE=2, COLOR=COLOR_24(color[nf])
-ENDFOR
+	
+	IF (nf EQ 0) THEN p1 = PLOT ((wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, $
+									TITLE = location, XRANGE = [-300,200], COLOR = COLOR_24(color[0]), XTITLE = 'WRF O3 Bias (ppb)', $
+									YTITLE = 'Relative Altitude (km)', YRANGE = [-8,6], NAME = '05202011-18Z')
+	IF (nf GE 1) THEN p2 = PLOT ((wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, $
+									COLOR = COLOR_24(color[1]), NAME = '05262011-18Z', /OVERPLOT)
 
+	p = PLOT ([-300,200],[wrf_ralt_trop,wrf_ralt_trop], THICK = 3, LINESTYLE=2, COLOR=COLOR_24(color[nf]), /OVERPLOT)
+
+	IF (nf GE 1) THEN leg = LEGEND(target = [p1,p2], position = [-275, -4], /DATA, /AUTO_TEXT_COLOR)
+
+STOP
+ENDFOR
 
 OPLOT, [-300,200],[0.0  ,0.0]
 OPLOT, [ 0.0,0.0],[-20.0,5.0]
@@ -144,5 +158,5 @@ IF KEYWORD_SET(eps) OR KEYWORD_SET(pdf) THEN BEGIN
 ENDIF ELSE IF KEYWORD_SET(png) THEN $
 	WRITE_PNG, pngfile, TVRD(TRUE = 1)																		;Write PNG file
 
-STOP
+
 END
