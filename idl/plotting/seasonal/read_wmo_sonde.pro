@@ -1,4 +1,5 @@
 PRO READ_WMO_SONDE, $
+	BIAS=bias, $
 	PNG=png, $
 	EPS=eps
 
@@ -6,7 +7,7 @@ PRO READ_WMO_SONDE, $
 ; Name:
 ;		READ_WMO_SONDE
 ; Purpose:
-;		This is a function to read wmo ozonesonde files. 
+;		This is a function to read wmo ozonesonde files.
 ; Calling sequence:
 ;		READ_WMO_SONDE
 ; Inputs:
@@ -22,9 +23,9 @@ PRO READ_WMO_SONDE, $
 
 COMPILE_OPT IDL2																									;Set Compile Options
 
-indir = !WRF_DIRECTORY + '20110518/ozonesondes/' 
+indir = !WRF_DIRECTORY + '20110518/ozonesondes/'
 
-IF KEYWORD_SET(eps) THEN BEGIN	
+IF KEYWORD_SET(eps) THEN BEGIN
 	PS_ON, FILENAME = epsfile, PAGE_SIZE = [4.0, 4.0], MARGIN = 0.0, /INCHES					;Switch to Postscript device
 	DEVICE, /ENCAPSULATED
 	!P.FONT     = 0																				;Hardware fonts
@@ -36,7 +37,7 @@ ENDIF ELSE BEGIN
 	WINDOW, XSIZE = 800, YSIZE = 800															;Open graphics window
 	!P.COLOR      = COLOR_24('black')															;Foreground color
 	!P.BACKGROUND = COLOR_24('white')															;Background color
-	!P.CHARSIZE   = 2.9		
+	!P.CHARSIZE   = 2.9
 	!P.FONT       = -1																			;Use Hershey fonts
 ENDELSE
 
@@ -45,10 +46,10 @@ color = ['black','red']
 nf=0
 FOR nf = 0, 1 DO BEGIN
 	IF (nf EQ 0) THEN BEGIN
-		infile1 = indir+'bu20110520_pressure.csv'					
-		infile2 = indir+'bu20110520_ppo3.csv'					
-		infile3 = indir+'bu20110520_temp.csv'					
-		infile4 = indir+'bu20110520_gph.csv'					
+		infile1 = indir+'bu20110520_pressure.csv'
+		infile2 = indir+'bu20110520_ppo3.csv'
+		infile3 = indir+'bu20110520_temp.csv'
+		infile4 = indir+'bu20110520_gph.csv'
 
 		wrf_lon  = (WRF_READ_VAR('Longitude',MAKE_DATE(2011,5,20,18), '20110518', 'seasonal_final/bigger_domain', DOMAIN = 1)).values			;Read variables
 		wrf_lat  = (WRF_READ_VAR('Latitude', MAKE_DATE(2011,5,20,18), '20110518', 'seasonal_final/bigger_domain', DOMAIN = 1)).values
@@ -58,10 +59,10 @@ FOR nf = 0, 1 DO BEGIN
 	ENDIF
 
 	IF (nf EQ 1) THEN BEGIN
-		infile1 = indir+'bu20110526_pressure.csv'					
-		infile2 = indir+'bu20110526_ppo3.csv'					
-		infile3 = indir+'bu20110526_temp.csv'					
-		infile4 = indir+'bu20110526_gph.csv'					
+		infile1 = indir+'bu20110526_pressure.csv'
+		infile2 = indir+'bu20110526_ppo3.csv'
+		infile3 = indir+'bu20110526_temp.csv'
+		infile4 = indir+'bu20110526_gph.csv'
 
 		wrf_lon  = (WRF_READ_VAR('Longitude',MAKE_DATE(2011,5,26,18), '20110518', 'seasonal_final/bigger_domain', DOMAIN = 1)).values			;Read variables
 		wrf_lat  = (WRF_READ_VAR('Latitude', MAKE_DATE(2011,5,26,18), '20110518', 'seasonal_final/bigger_domain', DOMAIN = 1)).values
@@ -69,14 +70,14 @@ FOR nf = 0, 1 DO BEGIN
 		wrf_o3   = (WRF_READ_VAR('O3'	   , MAKE_DATE(2011,5,26,18), '20110518', 'seasonal_final/bigger_domain', DOMAIN = 1)).values
 		wrf_trop = (WRF_READ_VAR('Z_trop'  , MAKE_DATE(2011,5,26,18), '20110518', 'seasonal_final/bigger_domain', DOMAIN = 1)).values
 	ENDIF
-		
+
 	sonde_lon = -105.25
 	sonde_lat = 40.0
 
-	epsfile = indir + 'boulder_may2011_o3sonde.eps'	
-	pdffile = indir + 'boulder_may2011_o3sonde.pdf'	
-	pngfile = indir + 'boulder_may2011_o3sonde.png'	
-	
+	epsfile = indir + 'boulder_may2011_o3sonde.eps'
+	pdffile = indir + 'boulder_may2011_o3sonde.pdf'
+	pngfile = indir + 'boulder_may2011_o3sonde.png'
+
 	sonde_pres = READ_CSV(infile1)
 	sonde_ppo3 = READ_CSV(infile2)
 	sonde_temp = READ_CSV(infile3)
@@ -85,7 +86,7 @@ FOR nf = 0, 1 DO BEGIN
 	sonde_o3 = ((sonde_ppo3.field1*0.001)/(sonde_pres.field1*100.0))*10^9
 
 	sonde_ztrop  = TROPOPAUSE(sonde_temp.field1, sonde_gph.field1*1.0E-3, sonde_pres.field1)
-	sonde_iztrop = INDEX_OF_NEAREST(sonde_ztrop, sonde_gph.field1*1.0E-3) 
+	sonde_iztrop = INDEX_OF_NEAREST(sonde_ztrop, sonde_gph.field1*1.0E-3)
 
 	sonde_trop_o3  = sonde_o3 [sonde_iztrop]
 
@@ -126,23 +127,33 @@ FOR nf = 0, 1 DO BEGIN
 
 	IF (nf EQ 0) THEN PLOT , (wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, TITLE = location, $
 								XRANGE = [-300,200], COLOR = COLOR_24(color[0]), XTITLE = 'WRF O3 Bias (ppb)', YTITLE = 'Relative Altitude (km)'
-								
+
 	IF (nf GE 1) THEN OPLOT, (wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, COLOR = COLOR_24(color[1])
-								
+
 
 	OPLOT, [-300,200],[wrf_ralt_trop,wrf_ralt_trop], THICK = 3, LINESTYLE=2, COLOR=COLOR_24(color[nf])
-	
-	IF (nf EQ 0) THEN p1 = PLOT ((wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, $
+
+	IF (KEYWORD_SET(bias)) THEN BEGIN
+		IF (nf EQ 0) THEN p1 = PLOT ((wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, $
 									TITLE = location, XRANGE = [-300,200], COLOR = COLOR_24(color[0]), XTITLE = 'WRF O3 Bias (ppb)', $
 									YTITLE = 'Relative Altitude (km)', YRANGE = [-8,6], NAME = '05202011-18Z')
-	IF (nf GE 1) THEN p2 = PLOT ((wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, $
+		IF (nf GE 1) THEN p2 = PLOT ((wrf_o3_sondepath[0:nlines-49:50]-sonde_o3[0:nlines-49:50]), ralt[0:nlines-49:50], THICK = 3, $
 									COLOR = COLOR_24(color[1]), NAME = '05262011-18Z', /OVERPLOT)
 
-	p = PLOT ([-300,200],[wrf_ralt_trop,wrf_ralt_trop], THICK = 3, LINESTYLE=2, COLOR=COLOR_24(color[nf]), /OVERPLOT)
+		p = PLOT ([-300,200],[wrf_ralt_trop,wrf_ralt_trop], THICK = 3, LINESTYLE=2, COLOR=COLOR_24(color[nf]), /OVERPLOT)
+		IF (nf GE 1) THEN leg = LEGEND(target = [p1,p2], position = [-175, -4], /DATA, /AUTO_TEXT_COLOR)
+	ENDIF
 
-	IF (nf GE 1) THEN leg = LEGEND(target = [p1,p2], position = [-275, -4], /DATA, /AUTO_TEXT_COLOR)
 
-STOP
+	p1 = PLOT (wrf_o3_sondepath[0:nlines-49:50], sonde_gph.field1[0:nlines-49:50]*1.0E-3, THICK = 3, $
+								TITLE = location, XRANGE = [0,500], COLOR = COLOR_24(color[0]), XTITLE = 'WRF O3 Bias (ppb)', $
+								YTITLE = 'Relative Altitude (km)', YRANGE = [0,15], NAME = 'WRF-simulated O3')
+
+	p2 = PLOT (sonde_o3[0:nlines-49:50], sonde_gph.field1[0:nlines-49:50]*1.0E-3, THICK = 3, $
+								COLOR = COLOR_24(color[1]), NAME = 'Observed O3', /OVERPLOT)
+
+	leg = LEGEND(target = [p1,p2], position = [450, 4], /DATA, /AUTO_TEXT_COLOR)
+
 ENDFOR
 
 OPLOT, [-300,200],[0.0  ,0.0]
@@ -152,7 +163,7 @@ IF KEYWORD_SET(eps) OR KEYWORD_SET(pdf) THEN BEGIN
 	IF (LONG((STRSPLIT(!VERSION.RELEASE, '.', /EXTRACT))[0]) LE 7) THEN $
 		LOAD_BASIC_COLORS, /RESET																				;Reset color table to linear ramp
 	PS_OFF																											;Turn PS off
-	
+
 	IF KEYWORD_SET(pdf) THEN $
 		PSTOPDF, epsfile, PDFFILE = pdffile, /DELETEPS													;Convert eps to pdf
 ENDIF ELSE IF KEYWORD_SET(png) THEN $
